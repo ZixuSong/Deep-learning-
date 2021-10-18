@@ -30,17 +30,9 @@ representations as the target label to train the OOD detection network.
 > </details>
 
 
-<br>
-
-[Back to Top](#top)
-
-<br>
-
-<a name="5.1.5"></a>
-### 5.1.5 Big Pretrained Model
-**[arXiv-2021]**
-[Exploring the Limits of Out-of-Distribution Detection](https://arxiv.org/abs/2106.03004)
-**Authors:** Fort, Stanislav and Ren, Jie and Lakshminarayanan, Balaji
+**[NeurIPS-2019]**
+[Practical deep learning with bayesian principles](https://arxiv.org/abs/2106.03004)
+**Authors:** Kazuki Osawa, Siddharth Swaroop, Anirudh Jain, Runa Eschenhagen, Richard E. Turner, Rio Yokota, Mohammad Emtiyaz Khan
 **Institution:** Stanford University; Google Research
 > <details>
 > <summary>Large-scale pre-trained transformers significantly improve near-OOD tasks</summary>
