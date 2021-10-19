@@ -1,5 +1,5 @@
 <a name="5.1.4"></a>
-### 5.1.4 Label Space Redesign
+### 5.1.4 Bayesian Models
 
 **[ICML-2016]**
 [Dropout as a bayesian approximation: Representing model uncertainty in deep learning](http://proceedings.mlr.press/v48/gal16.pdf).
@@ -20,7 +20,7 @@
 <br>
 **Authors:** Balaji Lakshminarayanan , Alexander Pritzel , Charles Blundell
 <br>
-**Institution:**
+**Institution:** DeepMind
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -31,9 +31,9 @@ representations as the target label to train the OOD detection network.
 
 
 **[NeurIPS-2019]**
-[Practical deep learning with bayesian principles](https://arxiv.org/abs/2106.03004)
+[Practical deep learning with bayesian principles](https://arxiv.org/pdf/1906.02506.pdf)
 **Authors:** Kazuki Osawa, Siddharth Swaroop, Anirudh Jain, Runa Eschenhagen, Richard E. Turner, Rio Yokota, Mohammad Emtiyaz Khan
-**Institution:** Stanford University; Google Research
+**Institution:** Tokyo Institute of Technology; University of Cambridge; Indian Institute of Technology (ISM); University of Osnabrück; RIKEN Center for AI Project
 > <details>
 > <summary>Large-scale pre-trained transformers significantly improve near-OOD tasks</summary>
 > <p style="text-align:left">
@@ -42,13 +42,93 @@ representations as the target label to train the OOD detection network.
 > </details>
 
 
+**[NeurIPS-2018]**
+[Predictive Uncertainty Estimation via Prior Networks](https://arxiv.org/pdf/1802.10501.pdf)
+<br>
+**Authors:** Andrey Malinin, Mark Gales
+<br>
+**Institution:** University of Cambridge 
+> <details>
+> <summary></summary>
+> <p style="text-align:left">
+> 
+> </p>
+> </details>
+
+
+**[NeurIPS-2019]**
+[Reverse kl-divergence training of prior networks: Improved uncertainty and adversarial robustness](https://arxiv.org/pdf/1905.13472.pdf)
+<br>
+**Authors:** Andrey Malinin, Mark Gales
+<br>
+**Institution:** Yandex; University of Cambridge
+> <details>
+> <summary></summary>
+> <p style="text-align:left">
+> 
+> </p>
+> </details>
+
+
+**[NeurIPS-2020]**
+[Towards maximizing the representation gap between in-domain & out-of-distribution examples](https://arxiv.org/pdf/2010.10474.pdf)
+<br>
+**Authors:** Jay Nandy, Wynne Hsu, Mong Li Lee
+<br>
+**Institution:** National University of Singapore
+> <details>
+> <summary></summary>
+> <p style="text-align:left">
+> 
+> </p>
+> </details>
+
+
+<br>
+
+[Back to Top](#top)
+
+<br>
+
+
+<a name="5.1.5"></a>
+### 5.1.5 Large-scale OOD Detection
+
+**[CVPR-2021]**
+[Mos: Towards scaling out-of-distribution detection for large semantic space](https://openaccess.thecvf.com/content/CVPR2021/papers/Huang_MOS_Towards_Scaling_Out-of-Distribution_Detection_for_Large_Semantic_Space_CVPR_2021_paper.pdf)
+<br>
+**Authors:** Rui Huang, Yixuan Li
+<br>
+**Institution:** University of Wisconsin-Madison
+> <details>
+> <summary>Using the class conditional Gaussian distributions with respect to low- and upper-level features.</summary>
+> <p style="text-align:left">
+> The model estimates standard class-conditional Gaussian distribution on intermediate activations to detect OOD samples. It makes use of Mahalanobis distance therefore it can be also interpreted as distance-based method.
+> </p>
+> </details>
+
+
+**[arXiv-2021]**
+[Exploring the limits of out-of-distribution detection](https://arxiv.org/pdf/2106.03004.pdf)
+<br>
+**Authors:** Stanislav Fort, Jie Ren, Balaji Lakshminarayanan
+<br>
+**Institution:** Stanford University; Google Research
+> <details>
+> <summary>Using likelihood ratios to cancel out background influence.</summary>
+> <p style="text-align:left">
+> This work finds the likelihood score is heavily affected by background, so likelihood ratios are used to cancel out background influence. The Likelihood Ratio (LR) is the likelihood that a given test result would be expected in a patient with the target disorder compared to the likelihood that that same result would be expected in a patient without the target disorder.
+> </p>
+> </details>
+
+
 
 **[arXiv-2020]**
-[Pretrained transformers improve out-of-distribution robustness](??)
+[Pretrained transformers improve out-of-distribution robustness](https://arxiv.org/pdf/2004.06100.pdf)
+br>
+**Authors:** Dan Hendrycks, Xiaoyuan Liu1, Eric Wallace, Adam Dziedzic, Rishabh Krishnan, Dawn Song
 <br>
-**Authors:** Hendrycks, Dan and Liu, Xiaoyuan and Wallace, Eric and Dziedzic, Adam and Krishnan, Rishabh and Song, Dawn
-<br>
-**Institution:** 
+**Institution:** UC Berkeley; Shanghai Jiao Tong University; University of Chicago
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -59,11 +139,11 @@ representations as the target label to train the OOD detection network.
 
 
 **[arXiv-2021]**
-[OODformer: Out-Of-Distribution Detection Transformer](??)
+[Oodformer: Out-of-distribution detection transformer](https://arxiv.org/pdf/2107.08976.pdf)
 <br>
-**Authors:** Koner, Rajat and Sinhamahapatra, Poulami and Roscher, Karsten and G{\"u}nnemann, Stephan and Tresp, Volker
+Authors: Rajat Koner, Poulami Sinhamahapatra, Karsten Roscher, Stephan Günnemann, Volker Tresp 
 <br>
-**Institution:** 
+**Institution:** Ludwig Maximilian University; Technical University; Fraunhofer, IKS; Siemens AG
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -79,77 +159,13 @@ representations as the target label to train the OOD detection network.
 <br>
 
 <a name="5.2"></a>
-## 5.2 Density-based Method
-<a name="5.2.1"></a>
-### 5.2.1 Embedding-based Method
-
-**[NeurIPS-2018]**
-[A simple unified framework for detecting out-of-distribution samples and adversarial attacks](https://arxiv.org/abs/1807.03888)
+## 5.2 Density-based Methods
+**[ICLR-2018]**
+[Deep autoencoding gaussian mixture model for unsupervised anomaly detection](https://openreview.net/pdf?id=BJJLHbb0-)
 <br>
-**Authors:** Lee, Kimin and Lee, Kibok and Lee, Honglak and Shin, Jinwoo
+**Authors:** Bo Zong, Qi Song, Martin Renqiang Min, Wei Cheng, Cristian Lumezanu, Daeki Cho, Haifeng Chen
 <br>
-**Institution:** KAIST; University of Michigan; Google Brain; AItrics
-> <details>
-> <summary>Using the class conditional Gaussian distributions with respect to low- and upper-level features.</summary>
-> <p style="text-align:left">
-> The model estimates standard class-conditional Gaussian distribution on intermediate activations to detect OOD samples. It makes use of Mahalanobis distance therefore it can be also interpreted as distance-based method.
-> </p>
-> </details>
-
-
-**[NeurIPS-2019]**
-[Likelihood ratios for out-of-distribution detection](https://arxiv.org/abs/1906.02845)
-<br>
-**Authors:** Ren, Jie and Liu, Peter J and Fertig, Emily and Snoek, Jasper and Poplin, Ryan and DePristo, Mark A and Dillon, Joshua V and Lakshminarayanan, Balaji
-<br>
-**Institution:** Google Research; DeepMind
-> <details>
-> <summary>Using likelihood ratios to cancel out background influence.</summary>
-> <p style="text-align:left">
-> This work finds the likelihood score is heavily affected by background, so likelihood ratios are used to cancel out background influence. The Likelihood Ratio (LR) is the likelihood that a given test result would be expected in a patient with the target disorder compared to the likelihood that that same result would be expected in a patient without the target disorder.
-> </p>
-> </details>
-
-
-
-**[NeurIPS-2019]**
-[Further analysis of outlier detection with deep generative models](?)
-<br>
-**Authors:** Wang, Ziyu and Dai, Bin and Wipf, David and Zhu, Jun
-<br>
-**Institution:**
-> <details>
-> <summary></summary>
-> <p style="text-align:left">
-> 
-> </p>
-> </details>
-
-
-
-**[NeurIPS-2020]**
-[Likelihood regret: An out-of-distribution detection score for variational auto-encoder](?)
-
-Authors: Xiao, Zhisheng and Yan, Qing and Amit, Yali
-<br>
-**Authors:** 
-<br>
-**Institution:**
-> <details>
-> <summary></summary>
-> <p style="text-align:left">
-> 
-> </p>
-> </details>
-
-
-
-**[NeurIPS-2018]**
-[Do deep generative models know what they don't know?](?)
-<br>
-**Authors:** Nalisnick, Eric and Matsukawa, Akihiro and Teh, Yee Whye and Gorur, Dilan and Lakshminarayanan, Balaji
-<br>
-**Institution:** 
+**Institution:** NEC Laboratories America; Washington State University
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -159,14 +175,12 @@ Authors: Xiao, Zhisheng and Yan, Qing and Amit, Yali
 
 
 
-**[ICLR-2020]**
-[Novelty detection via blurring](?)
-
-Authors: Choi, Sungik and Chung, Sae-Young
+**[CVPR-2019]**
+[Latent space autoregression for novelty detection](https://openaccess.thecvf.com/content_CVPR_2019/papers/Abati_Latent_Space_Autoregression_for_Novelty_Detection_CVPR_2019_paper.pdf)
 <br>
-**Authors:** 
+**Authors:** Davide Abati, Angelo Porrello, Simone Calderara, Rita Cucchiara
 <br>
-**Institution:**
+**Institution:** University of Modena and Reggio Emilia
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -176,14 +190,12 @@ Authors: Choi, Sungik and Chung, Sae-Young
 
 
 
-**[ICLR-2020]**
-[Input complexity and out-of-distribution detection with likelihood-based generative models](?)
-
-Authors: Serra, Joan and Alvarez, David and Gomez, Vicenc and Slizovskaia, Olga and Nunez, Jose F and Luque, Jordi
+**[NeurIPS-2018]**
+[Generative probabilistic novelty detection with adversarial autoencoders](https://arxiv.org/pdf/1807.02588.pdf)
 <br>
-**Authors:** 
+**Authors:** Stanislav Pidhorskyi, Ranya Almohsen, Donald A. Adjeroh, Gianfranco Doretto
 <br>
-**Institution:**
+**Institution:** West Virginia University
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -193,14 +205,12 @@ Authors: Serra, Joan and Alvarez, David and Gomez, Vicenc and Slizovskaia, Olga 
 
 
 
-**[arXiv-2020]**
-[Probabilistic auto-encoder]()
-
-Authors: B{\"o}hm, Vanessa and Seljak, Uro{\v{s}}
+**[in Joint european conference on machine learning and knowledge discovery in databases-2018]**
+[Image anomaly detection with generative adversarial networks](https://openreview.net/pdf?id=S1EfylZ0Z)
 <br>
-**Authors:** 
+**Authors:** Lucas Deecke, authorRobert Vandermeulen, Lukas RuffStephan Mandt, Marius Kloft
 <br>
-**Institution:**
+**Institution:** University of Edinburgh; TU Kaiserslautern; Hasso Plattner Institute; University of California
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -210,14 +220,12 @@ Authors: B{\"o}hm, Vanessa and Seljak, Uro{\v{s}}
 
 
 
-**[CVPR-2021]**
-[Soft-IntroVAE: Analyzing and Improving the Introspective Variational Autoencoder](?)
-
-Authors: Daniel, Tal and Tamar, Aviv
+**[TPAMI-2020]**
+[Normalizing flows: An introduction and review of current methods](https://arxiv.org/pdf/1908.09257.pdf)
 <br>
-**Authors:** 
+**Authors:** Ivan Kobyzev, Simon J.D. Prince, Marcus A. Brubaker
 <br>
-**Institution:**
+**Institution:** Borealis AI
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -226,21 +234,12 @@ Authors: Daniel, Tal and Tamar, Aviv
 > </details>
 
 
-
+**[CVPR-2018]**
+[Adversarially learned one-class classifier for novelty detection](https://openaccess.thecvf.com/content_cvpr_2018/papers/Sabokrou_Adversarially_Learned_One-Class_CVPR_2018_paper.pdf)
 <br>
-
-[Back to Top](#top)
-
+**Authors:** Mohammad Sabokrou, Mohammad Khalooei, Mahmood Fathy, Ehsan Adeli
 <br>
-
-<a name="5.2.2"></a>
-### 5.2.2 Flow-based Method
-**[CVPR-2020]**
-[Deep residual flow for out of distribution detection](?)
-<br>
-**Authors:** Zisselman, Ev and Tamar, Aviv
-<br>
-**Institution:**
+**Institution:** Institute for Research in Fundamental Sciences; Amirkabir University of Technology; Stanford University
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -250,12 +249,12 @@ Authors: Daniel, Tal and Tamar, Aviv
 
 
 
-**[NeurIPS-2020]**
-[Why normalizing flows fail to detect out-of-distribution data](?)
+**[NeurIPS-2018]**
+[A simple unified framework for detecting out-of-distribution samples and adversarial attacks](https://proceedings.neurips.cc/paper/2018/file/abdeb6f575ac5c6676b747bca8d09cc2-Paper.pdf)
 <br>
-**Authors:** Kirichenko, Polina and Izmailov, Pavel and Wilson, Andrew Gordon
+**Authors:** Kimin Lee, Kibok Lee, Honglak Lee, Jinwoo Shin
 <br>
-**Institution:**
+**Institution:** Korea Advanced Institute of Science and Technology (KAIST); University of Michigan; Google Brain; AItrics
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -265,14 +264,12 @@ Authors: Daniel, Tal and Tamar, Aviv
 
 
 
-**[NeurIPS-2020]**
-[Understanding anomaly detection with deep invertible networks through hierarchies of distributions and features](?)
-
-Authors: Schirrmeister, Robin Tibor and Zhou, Yuxuan and Ball, Tonio and Zhang, Dan
+**[CVPR-2020]**
+[Deep residual flow for out of distribution detection](?)
 <br>
-**Authors:** 
+**Authors:** Ev Zisselman, Aviv Tamar
 <br>
-**Institution:**
+**Institution:** Technion
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -282,22 +279,12 @@ Authors: Schirrmeister, Robin Tibor and Zhou, Yuxuan and Ball, Tonio and Zhang, 
 
 
 
+**[NeurIPS-2018]**
+[Glow: Generative flow with invertible 1x1 convolutions](https://arxiv.org/pdf/1807.03039.pdf)
 <br>
-
-[Back to Top](#top)
-
+**Authors:** Diederik P. Kingma, Prafulla Dhariwal
 <br>
-
-<a name="5.2.3"></a>
-### 5.2.3 Energy-based Method
-**[ICLR-2019]**
-[Your classifier is secretly an energy based model and you should treat it like one](?)
-
-Authors: Grathwohl, Will and Wang, Kuan-Chieh and Jacobsen, J{\"o}rn-Henrik and Duvenaud, David and Norouzi, Mohammad and Swersky, Kevin
-<br>
-**Authors:** 
-<br>
-**Institution:**
+**Institution:** OpenAI
 > <details>
 > <summary></summary>
 > <p style="text-align:left">
@@ -307,12 +294,96 @@ Authors: Grathwohl, Will and Wang, Kuan-Chieh and Jacobsen, J{\"o}rn-Henrik and 
 
 
 
+**[ICML-2016]**
+[Pixel recurrent neural networks](http://proceedings.mlr.press/v48/oord16.pdf)
+<br>
+**Authors:** Aaron van den Oord, Nal Kalchbrenner, Koray Kavukcuoglu
+<br>
+**Institution:** Google DeepMind
+> <details>
+> <summary>Using energy scores instead of softmax scores to conveniently achieve good results.</summary>
+> <p style="text-align:left">
+> Unlike softmax confidence scores, energy scores are theoretically aligned with the probability density of the inputs and are less susceptible to the overconfidence issue. The paper shows that energy can conveniently replace softmax confidence for any pre-trained neural network, and proposes an energy-bounded learning objective to fine-tune the network.
+> </p>
+> </details>
+
+
+**[NeurIPS-2018]**
+[Do deep generative models know what they don’t know?](https://arxiv.org/pdf/1810.09136.pdf)
+<br>
+**Authors:** Eric Nalisnick, Akihiro Matsukawa, Yee Whye Teh, Dilan Gorur, Balaji Lakshminarayanan
+<br>
+**Institution:** DeepMind
+> <details>
+> <summary>Using energy scores instead of softmax scores to conveniently achieve good results.</summary>
+> <p style="text-align:left">
+> Unlike softmax confidence scores, energy scores are theoretically aligned with the probability density of the inputs and are less susceptible to the overconfidence issue. The paper shows that energy can conveniently replace softmax confidence for any pre-trained neural network, and proposes an energy-bounded learning objective to fine-tune the network.
+> </p>
+> </details>
+
+
+**[arXiv-2018]**
+[Waic, but why? generative ensembles for robust anomaly detection](https://arxiv.org/pdf/1810.01392.pdf)
+<br>
+**Authors:** Hyunsun Choi, Eric Jang, Alexander A. Alemi
+<br>
+**Institution:** Google Inc.
+> <details>
+> <summary>Using energy scores instead of softmax scores to conveniently achieve good results.</summary>
+> <p style="text-align:left">
+> Unlike softmax confidence scores, energy scores are theoretically aligned with the probability density of the inputs and are less susceptible to the overconfidence issue. The paper shows that energy can conveniently replace softmax confidence for any pre-trained neural network, and proposes an energy-bounded learning objective to fine-tune the network.
+> </p>
+> </details>
+
+
 **[NeurIPS-2020]**
-[Energy-based out-of-distribution detection](https://arxiv.org/abs/2010.03759)
+[Why normalizing flows fail to detect out-of-distribution data](https://arxiv.org/pdf/2006.08545.pdf)
 <br>
-**Authors:** Liu, Weitang and Wang, Xiaoyun and Owens, John D and Li, Yixuan
+**Authors:** Polina Kirichenko, Pavel Izmailov, Andrew Gordon Wilson
 <br>
-**Institution:** University of California, San Diego; University of California, Davis; University of Wisconsin-Madison
+**Institution:** New York University
+> <details>
+> <summary>Using energy scores instead of softmax scores to conveniently achieve good results.</summary>
+> <p style="text-align:left">
+> Unlike softmax confidence scores, energy scores are theoretically aligned with the probability density of the inputs and are less susceptible to the overconfidence issue. The paper shows that energy can conveniently replace softmax confidence for any pre-trained neural network, and proposes an energy-bounded learning objective to fine-tune the network.
+> </p>
+> </details>
+
+
+**[NeurIPS-2019]**
+[Likelihood ratios for out-of-distribution detection](https://arxiv.org/pdf/1906.02845.pdf)
+<br>
+**Authors:** Jie Ren, Peter J. Liu, Emily Fertig, Jasper Snoek, Ryan Poplin, Mark A. DePristo, Joshua V. Dillon, Balaji Lakshminarayanan
+<br>
+**Institution:** Google Research; DeepMind
+> <details>
+> <summary>Using energy scores instead of softmax scores to conveniently achieve good results.</summary>
+> <p style="text-align:left">
+> Unlike softmax confidence scores, energy scores are theoretically aligned with the probability density of the inputs and are less susceptible to the overconfidence issue. The paper shows that energy can conveniently replace softmax confidence for any pre-trained neural network, and proposes an energy-bounded learning objective to fine-tune the network.
+> </p>
+> </details>
+
+
+**[ICLR-2020]**
+[Input complexity and out-of-distribution detection with likelihood-based generative models](https://arxiv.org/pdf/1909.11480.pdf)
+<br>
+**Authors:** Joan Serra, David Alvarez, Vicenc¸ Gomez, Olga Slizovskaia, Jose F. Nunez, Jordi Luque
+<br>
+**Institution:** Dolby Laboratories; Telefonica Research;  Universitat Politecnica de Catalunya; Universitat Pompeu Fabra
+> <details>
+> <summary>Using energy scores instead of softmax scores to conveniently achieve good results.</summary>
+> <p style="text-align:left">
+> Unlike softmax confidence scores, energy scores are theoretically aligned with the probability density of the inputs and are less susceptible to the overconfidence issue. The paper shows that energy can conveniently replace softmax confidence for any pre-trained neural network, and proposes an energy-bounded learning objective to fine-tune the network.
+> </p>
+> </details>
+
+
+**[NeurIPS-2020]**
+[Likelihood regret: An out-ofdistribution detection score for variational auto-encoder](https://arxiv.org/pdf/1906.02845.pdf)
+<br>
+**Authors:** Joan Serra, David Alvarez, Vicenc¸ Gomez, Olga Slizovskaia, Jose F. Nunez, Jordi Luque
+<br>
+**Institution:** Dolby Laboratories; Telefonica Research;  Universitat Politecnica de Catalunya; Universitat Pompeu Fabra
 > <details>
 > <summary>Using energy scores instead of softmax scores to conveniently achieve good results.</summary>
 > <p style="text-align:left">
@@ -328,37 +399,37 @@ Authors: Grathwohl, Will and Wang, Kuan-Chieh and Jacobsen, J{\"o}rn-Henrik and 
 <br>
 
 <a name="5.3"></a>
-## 5.3 Distance-based Method
+## 5.3 Distance-based Methods
 **[NeurIPS-2018]**
-[A simple unified framework for detecting out-of-distribution samples and adversarial attacks](https://arxiv.org/abs/1807.03888)
+[A simple unified framework for detecting out-of-distribution samples and adversarial attacks](https://proceedings.neurips.cc/paper/2018/file/abdeb6f575ac5c6676b747bca8d09cc2-Paper.pdf)
 <br>
-**Authors:** Lee, Kimin and Lee, Kibok and Lee, Honglak and Shin, Jinwoo
+**Authors:** Kimin Lee, Kibok Lee, Honglak Lee, Jinwoo Shin
 <br>
-**Institution:** KAIST; University of Michigan; Google Brain; AItrics
+**Institution:** Korea Advanced Institute of Science and Technology (KAIST); University of Michigan; Google Brain; AItrics
 > <details>
-> <summary>OOD detection with Mahalanobis distance</summary>
+> <summary></summary>
 > <p style="text-align:left">
-> This work uses the class conditional Gaussian distributions with respect to low- and upper-level features of the deep models under Gaussian discriminant analysis, which result in a confidence score based on the Mahalanobis distance.
+> Conclusion is that flows do not represent images based on their semantic contents, but rather directly encode their visual appearance.
+> </p>
+> </details>
+
+
+**[NeurIPS-2019]**
+[Likelihood ratios for out-of-distribution detection](https://arxiv.org/pdf/1906.02845.pdf)
+<br>
+**Authors:** Jie Ren, Peter J. Liu, Emily Fertig, Jasper Snoek, Ryan Poplin, Mark A. DePristo, Joshua V. Dillon, Balaji Lakshminarayanan
+<br>
+**Institution:** Google Research; DeepMind
+> <details>
+> <summary>Using energy scores instead of softmax scores to conveniently achieve good results.</summary>
+> <p style="text-align:left">
+> Unlike softmax confidence scores, energy scores are theoretically aligned with the probability density of the inputs and are less susceptible to the overconfidence issue. The paper shows that energy can conveniently replace softmax confidence for any pre-trained neural network, and proposes an energy-bounded learning objective to fine-tune the network.
 > </p>
 > </details>
 
 
 **[arXiv-2021]**
-[A Simple Fix to Mahalanobis Distance for Improving Near-OOD Detection](https://arxiv.org/abs/2106.09022)
-<br>
-**Authors:** Ren, Jie and Fort, Stanislav and Liu, Jeremiah and Roy, Abhijit Guha and Padhy, Shreyas and Lakshminarayanan, Balaji
-<br>
-**Institution:** Google Research; Stanford University; Harvard University; Google Health
-> <details>
-> <summary></summary>
-> <p style="text-align:left">
-> It proposes a relative Mahalanobis distance (RMD) which improves performance and is more robust to hyperparameter choice. RMD is equivalent to computing a likelihood ratio, which calculates the division between the sophisticated foreground distribution and background distribution as confidence score.
-> </p>
-> </details>
-
-
-**[ACCV-2020]**
-[Hyperparameter-free out-of-distribution detection using cosine similarity](https://arxiv.org/abs/1905.10628)
+[A simple fix to mahalanobis distance for improving near-ood detection](https://arxiv.org/abs/1905.10628)
 <br>
 **Authors:** Techapanurak, Engkarat and Suganuma, Masanori and Okatani, Takayuki
 <br>
@@ -371,10 +442,37 @@ Authors: Grathwohl, Will and Wang, Kuan-Chieh and Jacobsen, J{\"o}rn-Henrik and 
 > </details>
 
 
-**[CVPR-2021]**
-[Out-of-Distribution Detection Using Union of 1-Dimensional Subspaces](https://github.com/zaeemzadeh/OOD)
+**[ACCV-2020]**
+[Hyperparameter-free out-of-distribution detection using cosine similarity](https://openaccess.thecvf.com/content/ACCV2020/papers/Techapanurak_Hyperparameter-Free_Out-of-Distribution_Detection_Using_Cosine_Similarity_ACCV_2020_paper.pdf)
 <br>
-**Authors:** Zaeemzadeh, Alireza and Bisagno, Niccol{\`o} and Sambugaro, Zeno and Conci, Nicola and Rahnavard, Nazanin and Shah, Mubarak
+**Authors:** Engkarat Techapanurak, Masanori Suganuma, Takayuki Okatani
+<br>
+**Institution:** Tohoku University;  RIKEN Center for AIP
+> <details>
+> <summary> Using scaled cosine similarity between test sample features and class features to determine OOD samples. </summary>
+> <p style="text-align:left">
+> The first work employs softmax of scaled cosine similarity instead of ordinary softmax of logits. Taking the metric learning idea into OOD detection. It is also the concurrent work of Generalized ODIN.
+> </p>
+> </details>
+
+**[ECCV-2020]**
+[A boundary based out-of-distribution classifier for generalized zero-shot learning](https://arxiv.org/abs/2008.04872)
+<br>
+**Authors:** Xingyu Chen, Xuguang Lan, Fuchun Sun, Nanning Zheng
+<br>
+**Institution:** Xian Jiaotong University; Tsinghua University
+> <details>
+> <summary>Find the Boundaries for OOD Classification and finally compare the cosine distance between samples in the unit hypersphere.</summary>
+> <p style="text-align:left">
+> 
+> </p>
+> </details>
+
+
+**[CVPR-2021]**
+[Out-of-Distribution Detection Using Union of 1-Dimensional Subspaces](https://openaccess.thecvf.com/content/CVPR2021/papers/Zaeemzadeh_Out-of-Distribution_Detection_Using_Union_of_1-Dimensional_Subspaces_CVPR_2021_paper.pdf)
+<br>
+**Authors:** Alireza Zaeemzadeh, Niccolò Bisagno, Zeno Sambugaro, Nicola Conci, Nazanin Rahnavard, Mubarak Shah
 <br>
 **Institution:** University of Central Florida; University of Trento
 > <details>
@@ -385,12 +483,12 @@ Authors: Grathwohl, Will and Wang, Kuan-Chieh and Jacobsen, J{\"o}rn-Henrik and 
 > </details>
 
 
-**[ECCV-2020]**
-[A boundary based out-of-distribution classifier for generalized zero-shot learning](https://arxiv.org/abs/2008.04872)
+**[ICML-2020]**
+[Uncertainty estimation using a single deep deterministic neural network](https://arxiv.org/abs/2008.04872)
 <br>
-**Authors:** Chen, Xingyu and Lan, Xuguang and Sun, Fuchun and Zheng, Nanning.
+**Authors:** Joost van Amersfoort, Lewis Smith, Yee Whye Teh, Yarin Gal
 <br>
-**Institution:** Xian Jiaotong University; Tsinghua University
+**Institution:** University of Oxford
 > <details>
 > <summary>Find the Boundaries for OOD Classification and finally compare the cosine distance between samples in the unit hypersphere.</summary>
 > <p style="text-align:left">
@@ -402,92 +500,13 @@ Authors: Grathwohl, Will and Wang, Kuan-Chieh and Jacobsen, J{\"o}rn-Henrik and 
 **[arXiv-2020]**
 [Feature Space Singularity for Out-of-Distribution Detection](https://arxiv.org/abs/2011.14654)
 <br>
-**Authors:** Huang, Haiwen and Li, Zhihan and Wang, Lulu and Chen, Sishuo and Dong, Bin and Zhou, Xinyu
+**Authors:** Haiwen Huang, Zhihan Li, Lulu Wang, Sishuo Chen, Bin Dong, Xinyu Zhou
 <br>
 **Institution:** University of Oxford; Peking University; MEGVII Technology; etc.
 > <details>
 > <summary> Distance to Feature Space Singularity can measure OOD.</summary>
 > <p style="text-align:left">
 > It is observed that in feature spaces, OOD samples concentrate near a Feature Space Singularity (FSS) point, and the distance from a sample to FSS measures the degree of OOD. It can be exlained that moving speeds of features of other data depend on their similarity to the training data. During training, they use generated uniform noise or validation data as OOD.
-> </p>
-> </details>
-
-
-**[ICML-2020]**
-[Uncertainty estimation using a single deep deterministic neural network](?)
-<br>
-**Authors:** Van Amersfoort, Joost and Smith, Lewis and Teh, Yee Whye and Gal, Yarin
-<br>
-**Institution:** 
-> <details>
-> <summary></summary>
-> <p style="text-align:left">
-> This method trains a feature extractor without a softmax layer. Instead, it learns a centroid per class and attracts samples towards the centroids of their class, similar to contrastive losses. It uses a Radial Basis Function (RBF) kernel to compute the distance between the input’s embedding and the class centroids. The distance to the closest centroid defines classification, and is also used as the OOD score.
-> </p>
-> </details>
-
-
-<br>
-
-[Back to Top](#top)
-
-<br>
-
-<a name="5.4"></a>
-## 5.4 Meta-Learning-based Method
-
-**[ICML-2020]**
-[Detecting out-of-distribution examples with gram matrices](http://proceedings.mlr.press/v119/sastry20a/sastry20a.pdf)
-<br>
-**Authors:** Sastry, Chandramouli Shama and Oore, Sageev
-<br>
-**Institution:** Dalhousie University
-> <details>
-> <summary>Jointly considering the class assigned at the output layer and the activity patterns in the intermediate layers.</summary>
-> <p style="text-align:left">
-> It uses activity patterns to detect anomalies, i.e., the path by which it arrived at that prediction. Gram Matrices not only describe the activations at the individual channels but also summarize the pairwise interactions between the channels.
-> </p>
-> </details>
-
-**[NeurIPS-2020]**
-[OOD-MAML: Meta-learning for few-shot out-of-distribution detection and classification](?)
-
-Authors: Jeong, Taewon and Kim, Heeyoung
-
-**[ICLR-2020]**
-[Learning to balance: Bayesian meta-learning for imbalanced and out-of-distribution tasks](?)
-
-Authors: Lee, Hae Beom and Lee, Hayeon and Na, Donghyun and Kim, Saehoon and Park, Minseop and Yang, Eunho and Hwang, Sung Ju
-
-<br>
-
-[Back to Top](#top)
-
-<br>
-
-<a name="5.5"></a>
-## 5.5 Hybrid Method and Others
-
-Isolation forests exploits the fact that anomalies are scarce and different and while constructing the isolation tree, it is observed that the anomalous samples appear close to the root of the tree. These anomalies are then identified by measuring the length of the path from the root to a terminating node; the closer a node is to the root, the higher is its chance of representing an OOD.
-
-<br>
-
-[Back to Top](#top)
-
-<br>
-
-<a name="5.5"></a>
-## 5.6 Discussion
-**[BMVC-2019]**
-[A Less Biased Evaluation of Out-of-distribution Sample Detectors](https://arxiv.org/abs/1809.04729)
-<br>
-**Author:** Shafaei, Alireza and Schmidt, Mark and Little, James J
-<br>
-**Institution:** University of British Columbia
-> <details>
-> <summary>A three-dataset evaluation scheme as a more reliable strategy to assess progress.</summary>
-> <p style="text-align:left">
-> Classic OOD detection testing may produce a biased result since the distribution of outliers used in training may not be the same as the distribution of outliers encountered in the application. An exhaustive evaluation shows realistic applications of high-dimensional images the previous techniques have low accuracy and are not reliable in practice.
 > </p>
 > </details>
 
