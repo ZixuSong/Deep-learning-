@@ -634,7 +634,9 @@ representations as the target label to train the OOD detection network.
 
 **[NeurIPS-2019]**
 [Practical deep learning with bayesian principles](https://arxiv.org/pdf/1906.02506.pdf)
+<br>
 **Authors:** Kazuki Osawa, Siddharth Swaroop, Anirudh Jain, Runa Eschenhagen, Richard E. Turner, Rio Yokota, Mohammad Emtiyaz Khan
+<br>
 **Institution:** Tokyo Institute of Technology; University of Cambridge; Indian Institute of Technology (ISM); University of Osnabrück; RIKEN Center for AI Project
 > <details>
 > <summary>Large-scale pre-trained transformers significantly improve near-OOD tasks</summary>
@@ -727,7 +729,7 @@ representations as the target label to train the OOD detection network.
 
 **[arXiv-2020]**
 [Pretrained transformers improve out-of-distribution robustness](https://arxiv.org/pdf/2004.06100.pdf)
-br>
+<br>
 **Authors:** Dan Hendrycks, Xiaoyuan Liu1, Eric Wallace, Adam Dziedzic, Rishabh Krishnan, Dawn Song
 <br>
 **Institution:** UC Berkeley; Shanghai Jiao Tong University; University of Chicago
@@ -743,7 +745,7 @@ br>
 **[arXiv-2021]**
 [Oodformer: Out-of-distribution detection transformer](https://arxiv.org/pdf/2107.08976.pdf)
 <br>
-Authors: Rajat Koner, Poulami Sinhamahapatra, Karsten Roscher, Stephan Günnemann, Volker Tresp 
+**Authors**: Rajat Koner, Poulami Sinhamahapatra, Karsten Roscher, Stephan Günnemann, Volker Tresp 
 <br>
 **Institution:** Ludwig Maximilian University; Technical University; Fraunhofer, IKS; Siemens AG
 > <details>
