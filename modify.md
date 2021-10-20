@@ -981,11 +981,11 @@ Authors: Rajat Koner, Poulami Sinhamahapatra, Karsten Roscher, Stephan Günneman
 
 
 **[NeurIPS-2020]**
-[Likelihood regret: An out-ofdistribution detection score for variational auto-encoder](https://arxiv.org/pdf/1906.02845.pdf)
+[Likelihood regret: An out-ofdistribution detection score for variational auto-encoder](https://arxiv.org/pdf/2003.02977.pdf)
 <br>
-**Authors:** Joan Serra, David Alvarez, Vicenc¸ Gomez, Olga Slizovskaia, Jose F. Nunez, Jordi Luque
+**Authors:** Zhisheng Xiao, Qing Yan, Yali Amit
 <br>
-**Institution:** Dolby Laboratories; Telefonica Research;  Universitat Politecnica de Catalunya; Universitat Pompeu Fabra
+**Institution:** University of Chicago
 > <details>
 > <summary>Using energy scores instead of softmax scores to conveniently achieve good results.</summary>
 > <p style="text-align:left">
@@ -1031,11 +1031,11 @@ Authors: Rajat Koner, Poulami Sinhamahapatra, Karsten Roscher, Stephan Günneman
 
 
 **[arXiv-2021]**
-[A simple fix to mahalanobis distance for improving near-ood detection](https://arxiv.org/abs/1905.10628)
+[A simple fix to mahalanobis distance for improving near-ood detection](https://arxiv.org/pdf/2106.09022.pdf)
 <br>
-**Authors:** Techapanurak, Engkarat and Suganuma, Masanori and Okatani, Takayuki
+**Authors:** Jie Ren, Stanislav Fort, Jeremiah Liu, Abhijit Guha Roy, Shreyas Padhy, Balaji Lakshminarayanan
 <br>
-**Institution:** Tohoku University; RIKEN
+**Institution:** Google Research; Stanford University; Harvard University; Google Health
 > <details>
 > <summary> Using scaled cosine similarity between test sample features and class features to determine OOD samples. </summary>
 > <p style="text-align:left">
